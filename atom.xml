@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>bracemao</title>
+  <subtitle>blog</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://bracemao.github.io/"/>
+  <updated>2016-09-09T15:18:39.000Z</updated>
+  <id>https://bracemao.github.io/</id>
+  
+  <author>
+    <name>Brace Mao</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mac搭建hexo</title>
+    <link href="https://bracemao.github.io/2016/09/09/mac%E6%90%AD%E5%BB%BAhexo/"/>
+    <id>https://bracemao.github.io/2016/09/09/mac搭建hexo/</id>
+    <published>2016-09-09T15:16:21.000Z</published>
+    <updated>2016-09-09T15:18:39.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>you can find me on <a href="https://github.com/BraceMao" target="_blank" rel="external">GitHub</a>.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;you can find me on &lt;a href=&quot;https://github.com/BraceMao&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
