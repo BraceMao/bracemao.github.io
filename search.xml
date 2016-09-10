@@ -20,7 +20,7 @@
 <p>   ※提示: 所有以上的输入操作都在 命令行进入 xxxblog 目录下进行!</p>
 <p>4.blog主题<br>    ※<a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">here</a>有很多基于hexo的主题, 你可以选择一款尝试一下效果<br>      ☛ 比如 你选择了A主题<br>          你可以选择clone或下载该主题, 放到 xxxblog/themes 下, 里面还有一个默认主题 landscape,<br>          然后更改 _config.yml 中的 theme 字段, 改为上面下载的主题的包名 A, 保存再运行查看效果即可, 更多该主题信息可查看该主题使用说明/文档    </p>
 <p>5.现在你也有自己的blog了!</p>
-<p>6.说明<br>    以上内容仅供个人笔记使用<br>    感谢 <a href="http://simonenfp.github.io/page/3" target="_blank" rel="external">simonenfp</a> 同学的分享, 之前也有过搞blog的想法, 模仿其windows环境, 自己搭了下mac环境下的blog, 步骤基本差不多(有google过,但是感觉没这种简便), </p>
+<p>6.说明<br>    以上内容仅供个人笔记使用<br>    感谢 <a href="http://simonenfp.github.io/page/3" target="_blank" rel="external">simonenfp</a> 同学的分享, 之前也有过搞blog的想法, 模仿其windows环境, 自己搭了下mac环境下的blog, 步骤基本差不多(有google过,但是感觉没这种简便)</p>
 <p>——————————————- 朴实的 end 线 ——————————————–</p>
 ]]></content>
     </entry>
