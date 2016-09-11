@@ -87,21 +87,18 @@
 
 
 <meta name="description" content="不多说, 进入正题
-1.准备工作   ※首先得有个github账号, 因为该blog依赖于github, 没有账号的同学请移步Github
-   ※创建一个public库(私有库收费,壕请无视), 在[Repository name]下面填写:yourname.github.io, 这里的yourname即是你github的用户名, 注意要全部小写!!!小写!!!小写!!!">
+1.准备工作   ※首先得有个github账号, 因为该blog依赖于github, 没有账号的同学请移步Github   ※创建一个public库(私有库收费,壕请无视), 在[Repository name]下面填写:yourname.github.io, 这里的yourname即是你github的用户名, 注意要全部小写!!!小写!!!小写!!!">
 <meta property="og:type" content="article">
 <meta property="og:title" content="mac下 Hexo+Github 搭建个人博客 ">
 <meta property="og:url" content="https://bracemao.github.io/2016/09/11/mac下-Hexo-Github-搭建个人博客/index.html">
 <meta property="og:site_name" content="bracemao">
 <meta property="og:description" content="不多说, 进入正题
-1.准备工作   ※首先得有个github账号, 因为该blog依赖于github, 没有账号的同学请移步Github
-   ※创建一个public库(私有库收费,壕请无视), 在[Repository name]下面填写:yourname.github.io, 这里的yourname即是你github的用户名, 注意要全部小写!!!小写!!!小写!!!">
-<meta property="og:updated_time" content="2016-09-10T16:48:47.000Z">
+1.准备工作   ※首先得有个github账号, 因为该blog依赖于github, 没有账号的同学请移步Github   ※创建一个public库(私有库收费,壕请无视), 在[Repository name]下面填写:yourname.github.io, 这里的yourname即是你github的用户名, 注意要全部小写!!!小写!!!小写!!!">
+<meta property="og:updated_time" content="2016-09-11T05:35:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mac下 Hexo+Github 搭建个人博客 ">
 <meta name="twitter:description" content="不多说, 进入正题
-1.准备工作   ※首先得有个github账号, 因为该blog依赖于github, 没有账号的同学请移步Github
-   ※创建一个public库(私有库收费,壕请无视), 在[Repository name]下面填写:yourname.github.io, 这里的yourname即是你github的用户名, 注意要全部小写!!!小写!!!小写!!!">
+1.准备工作   ※首先得有个github账号, 因为该blog依赖于github, 没有账号的同学请移步Github   ※创建一个public库(私有库收费,壕请无视), 在[Repository name]下面填写:yourname.github.io, 这里的yourname即是你github的用户名, 注意要全部小写!!!小写!!!小写!!!">
 
 
 
@@ -364,20 +361,9 @@
 
       
         <p>不多说, 进入正题</p>
-<p>1.准备工作<br>   ※首先得有个github账号, 因为该blog依赖于github, 没有账号的同学请移步<a href="https://github.com" target="_blank" rel="external">Github</a></p>
-<p>   ※创建一个public库(私有库收费,壕请无视), 在[Repository name]下面填写:yourname.github.io, 这里的yourname即是你github的用户名, 注意要全部小写!!!小写!!!小写!!!<br><a id="more"></a> </p>
-<p>2.安装环境<br>   ※基本环境: 首先需要安装git/node.js, 非本文重点, 具体步骤请移步<a href="http://www.google.com" target="_blank" rel="external">Google</a>, 配置好后记得检查环境是否安装正确</p>
-<p>   ※这里主要说Hexo环境配置<br>       ☛ 可以在任何有足够大小且喜欢的地方新建一个自命名的文件夹(如: xxxblog,下面内容就以该文件名进行说明), 然后通过命令行cd进入该目录下,<br>        输入以下命令:<br>        npm install -g hexo-cli<br>        回车等待安装完成即可, 根据网络状况安装过程持续时间可能不同<br>       ☛ 完成后输入 hexo -v 检查是否安装正确<br>       ☛ 然后输入 hexo init 进行初始化操作, 过程会自行处理, 等待完成即可<br>       ☛ 初始化完成后再输入 npm install , 该过程会安装一些必要组件, 等待完成即可<br>       ☛ 以上操作正确后, 接下来可以体验一下本地blog功能了!!!<br>         首先输入 hexo g (g是generate缩写)<br>         完成后再输入 hexo s (s是server缩写)<br>         打开浏览器(个人用的Google浏览器)输入 localhost:4000, 是不是有惊喜出现? 有就表示成功了!! 不过这个惊喜页面用的是默认主题, 下面来修改一下 _config.yml 文件内容进行一些自定义配置</p>
-<p>3.发布到github<br>   ※前两步完成后你会发现 xxxblog 目录下有一个 _config.yml 文件, 可以用文本格式打开(个人用的<a href="http://www.sublimetext.com/3" target="_blank" rel="external">Sublime Text</a>)</p>
-<p>   ※然后不要犹豫, 一路向下, 滚动到最底部!! 找到下面这段:<br>       deploy:<br>          type:<br>      然后修改如下:<br>      deploy:<br>          type:(我是空格)git<br>          repo:(我是空格)<a href="https://github.com/yourname/yourname.github.io" target="_blank" rel="external">https://github.com/yourname/yourname.github.io</a><br>          branch:(我是空格)master<br>      ☛ 特别提醒: 个人遇到的坑, 这里repo里面的yourname, 一定要全部小写!!!小写!!!小写!!! lz的github账号github给的是首字母大写的用户名, 如果你也是的话, 直接改成相应的小写字母即可!!原因下面会说;<br>      同时注意保持最少空一格, 我用的<a href="http://www.sublimetext.com/3" target="_blank" rel="external">Sublime Text</a>, 打开会发现默认的如deploy/type会变色, 不空格的话, 不会变色, 注意语法格式问题</p>
-<p>   ※下面把本地内容发布到github上<br>         ☛ 首先输入 npm install hexo-deployer-git –save<br>         根据网络状况, 网络不好可能等待比较长的时间;<br>         还有就是上面说的’小写’坑, 个人开始用的github默认给的大写用户名, 结果就是无限期等待!!(连个错误提示你都等不到!我是没等到!)</p>
-<p>   ※然后输入 hexo d (d是deploy的缩写)<br>        然后会要求输入你的github的账号和密码, 输入即可<br>        这时会看到发布的一些相关输出信息, 别激动! 等待完成<br>        ☛ 注意: 上面的输入账号和密码, 如果出现错误, 这可能是之前git配置过其它账号, 但是不是你的这个github账号, 所以你需要重新修改一下配置信息, 如下两步:<br>        git config –global user.name “xxxxx”<br>        git config –global user.email “xxxxx@example.com”</p>
-<p>   ※如果上面都没错, 这时你应该可以访问这个网址了 <a href="https://yourname.github.io" target="_blank" rel="external">https://yourname.github.io</a>, 打开即是你刚才上传的页面!!! 现在开始你也有自己的blog了!!! </p>
-<p>   ※发布一篇新文章<br>         ☛ 输入 hexo n “我有blog了”<br>            这时在 xxxblog/source/_post目录下会生成一个名为 “我有blog了.md” 的文件, 用你喜欢的编辑器打开, 开始你的blog之路吧!<br>           完成后依次输入 hexo g, hexo s(这时可以本地查看效果), hexo s, 大功告成!!!</p>
-<p>   ※提示: 所有以上的输入操作都在 命令行进入 xxxblog 目录下进行!</p>
-<p>4.blog主题<br>    ※<a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">here</a>有很多基于hexo的主题, 你可以选择一款尝试一下效果<br>      ☛ 比如 你选择了A主题<br>          你可以选择clone或下载该主题, 放到 xxxblog/themes 下, 里面还有一个默认主题 landscape,<br>          然后更改 _config.yml 中的 theme 字段, 改为上面下载的主题的包名 A, 保存再运行查看效果即可, 更多该主题信息可查看该主题使用说明/文档    </p>
-<p>5.现在你也有自己的blog了!</p>
-<p>6.说明<br>    以上内容仅供个人笔记使用<br>    感谢 <a href="http://simonenfp.github.io/page/3" target="_blank" rel="external">simonenfp</a> 同学的分享, 之前也有过搞blog的想法, 模仿其windows环境, 自己搭了下mac环境下的blog, 步骤基本差不多(有google过,但是感觉没这种简便)</p>
+<h3>1.准备工作</h3><br>   ※首先得有个github账号, 因为该blog依赖于github, 没有账号的同学请移步<a href="https://github.com" target="_blank" rel="external">Github</a><br><br>   ※创建一个public库(私有库收费,壕请无视), 在[Repository name]下面填写:yourname.github.io, 这里的yourname即是你github的用户名, 注意要全部小写!!!小写!!!小写!!!<br><a id="more"></a><br><br><h3>2.安装环境</h3><br>   ※基本环境: 首先需要安装git/node.js, 非本文重点, 具体步骤请移步<a href="http://www.google.com" target="_blank" rel="external">Google</a>, 配置好后记得检查环境是否安装正确<br><br>   ※这里主要说Hexo环境配置<br>       ☛ 可以在任何有足够大小且喜欢的地方新建一个自命名的文件夹(如: xxxblog,下面内容就以该文件名进行说明), 然后通过命令行cd进入该目录下,<br>        输入以下命令:<br>        <code>npm install -g hexo-cli</code><br>        回车等待安装完成即可, 根据网络状况安装过程持续时间可能不同<br>       ☛ 完成后输入 <code>hexo -v</code> 检查是否安装正确<br>       ☛ 然后输入 <code>hexo init</code> 进行初始化操作, 过程会自行处理, 等待完成即可<br>       ☛ 初始化完成后再输入 <code>npm install</code> , 该过程会安装一些必要组件, 等待完成即可<br>       ☛ 以上操作正确后, 接下来可以体验一下本地blog功能了!!!<br>         首先输入 <code>hexo g</code> (g是generate缩写)<br>         完成后再输入 <code>hexo s</code> (s是server缩写)<br>         打开浏览器(个人用的Google浏览器)输入 localhost:4000, 是不是有惊喜出现? 有就表示成功了!! 不过这个惊喜页面用的是默认主题, 下面来修改一下 _config.yml 文件内容进行一些自定义配置<br><br><h3>3.发布到github</h3><br>   ※前两步完成后你会发现 xxxblog 目录下有一个 _config.yml 文件, 可以用文本格式打开(个人用的<a href="http://www.sublimetext.com/3" target="_blank" rel="external">Sublime Text</a>)<br><br>   ※然后不要犹豫, 一路向下, 滚动到最底部!! 找到下面这段:<br>       deploy:<br>          type:<br>      然后修改如下:<br>      deploy:<br>          type:(我是空格)git<br>          repo:(我是空格)<a href="https://github.com/yourname/yourname.github.io" target="_blank" rel="external">https://github.com/yourname/yourname.github.io</a><br>          branch:(我是空格)master<br>      ☛ 特别提醒: 个人遇到的坑, 这里repo里面的yourname, 一定要全部小写!!!小写!!!小写!!! lz的github账号github给的是首字母大写的用户名, 如果你也是的话, 直接改成相应的小写字母即可!!原因下面会说;<br>      同时注意保持最少空一格, 我用的<a href="http://www.sublimetext.com/3" target="_blank" rel="external">Sublime Text</a>, 打开会发现默认的如deploy/type会变色, 不空格的话, 不会变色, 注意语法格式问题<br><br>   ※下面把本地内容发布到github上<br>         ☛ 首先输入 <code>npm install hexo-deployer-git --save</code><br>         根据网络状况, 网络不好可能等待比较长的时间;<br>         还有就是上面说的’小写’坑, 个人开始用的github默认给的大写用户名, 结果就是无限期等待!!(连个错误提示你都等不到!我是没等到!)<br><br>   ※然后输入 <code>hexo d</code> (d是deploy的缩写)<br>        然后会要求输入你的github的账号和密码, 输入即可<br>        这时会看到发布的一些相关输出信息, 别激动! 等待完成<br>        ☛ 注意: 上面的输入账号和密码, 如果出现错误, 这可能是之前git配置过其它账号, 但是不是你的这个github账号, 所以你需要重新修改一下配置信息, 如下两步:<br>        <code>git config --global user.name &quot;xxxxx&quot;</code><br>        <code>git config --global user.email &quot;xxxxx@example.com&quot;</code><br><br>   ※如果上面都没错, 这时你应该可以访问这个网址了 <a href="https://yourname.github.io" target="_blank" rel="external">https://yourname.github.io</a>, 打开即是你刚才上传的页面!!! 现在开始你也有自己的blog了!!!<br><br>   ※发布一篇新文章<br>         ☛ 输入 <code>hexo n &quot;我有blog了&quot;</code><br>            这时在 xxxblog/source/_post目录下会生成一个名为 “我有blog了.md” 的文件, 用你喜欢的编辑器打开, 开始你的blog之路吧!<br>           完成后依次输入 <code>hexo g</code>, <code>hexo s</code>(这时可以本地查看效果), <code>hexo d</code>, 大功告成!!!<br><br>   ※提示: 所有以上的输入操作都在 命令行进入 xxxblog 目录下进行!<br><br><h3>4.blog主题</h3><br>    ※<a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">here</a>有很多基于hexo的主题, 你可以选择一款尝试一下效果<br>      ☛ 比如 你选择了A主题<br>          你可以选择clone或下载该主题, 放到 xxxblog/themes 下, 里面还有一个默认主题 landscape,<br>          然后更改 _config.yml 中的 theme 字段, 改为上面下载的主题的包名 A, 保存再运行查看效果即可, 更多该主题信息可查看该主题使用说明/文档<br><br><h3>5.现在你也有自己的blog了!</h3>
+
+<p></p><h3>6.说明</h3><br>    以上内容仅供个人笔记使用<br>    感谢 <a href="http://simonenfp.github.io/page/3" target="_blank" rel="external">simonenfp</a> 同学的分享, 之前也有过搞blog的想法, 模仿其windows环境, 自己搭了下mac环境下的blog, 步骤基本差不多(有google过,但是感觉没这种简便)<p></p>
 <p>——————————————- 朴实的 end 线 ——————————————–</p>
 
       
@@ -579,7 +565,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">1.准备工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">2.安装环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">3.发布到github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">4.blog主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">5.现在你也有自己的blog了!</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">6.</span> <span class="nav-text">6.说明</span></a></li></ol></div>
             
           </div>
         </section>
